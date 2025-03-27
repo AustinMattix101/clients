@@ -1,16 +1,13 @@
 import "./DarkMode.css";
 import { ChangeEventHandler, useState } from "react";
-import { updateLSItem } from "../../pages";
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
-  if (localStorage.getItem('user')) updateLSItem("user", 0, "theme", "dark");
   document.documentElement.setAttribute("data-theme", "dark");
 };
 
 const setLight = () => {
   localStorage.setItem("theme", "light");
-  if (localStorage.getItem('user')) updateLSItem("user", 0, "theme", "light");
   document.documentElement.setAttribute("data-theme", "light");
 };
 

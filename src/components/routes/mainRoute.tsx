@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes as Switch, Route} from 'react-router-do
 
 import { ProtectedRoute } from "./";
 import { getLoadingMarkup } from "../assets/components";
-import { SharedLayout, Home, About, Products, Profile, SingleProfile, FourOFour, DashboardScreen, Stat, EmailConfirmation, ForgotPasswordScreen, SigninScreen, SignupScreen, ResetPasswordScreen, Setting, ValidateTwoFA, VerifyEmail } from "../pages";
+import { DashboardScreen, Stat, EmailConfirmation, ForgotPasswordScreen, LoginScreen, RegisterScreen, ResetPasswordScreen, Setting, ValidateTwoFA, VerifyEmail } from "../screens";
+import { SharedLayout, Home, About, Products, Profile, SingleProfile, FourOFour } from "../pages";
 
 const MainRoute: React.FC = () => {
   return (
@@ -46,11 +47,11 @@ const MainRoute: React.FC = () => {
               />
               <Route 
               path="signin" 
-              element={<SigninScreen />}
+              element={<LoginScreen />}
               />
               <Route 
               path="signup" 
-              element={<SignupScreen />}
+              element={<RegisterScreen />}
               />
               <Route 
               path="emailconfirm" 

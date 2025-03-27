@@ -1,13 +1,13 @@
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
-import { getLoadingMarkup } from "../../assets/components";
-import { NavBar } from "../../screens";
+import loadingMarkup from "../../assets/components/getLoadingMarkup";
+import Navbar from "../../screens/navigation/NavBar";
 
 const SharedLayout: React.FC = () => {
   return (
     <>  
-      <Suspense fallback={getLoadingMarkup()}>
-        <NavBar />
+      <Suspense fallback={loadingMarkup()}>
+        <Navbar />
         <section className="section">
           <Outlet />
         </section>

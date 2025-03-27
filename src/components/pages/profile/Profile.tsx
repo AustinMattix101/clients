@@ -1,4 +1,4 @@
-import { capitalize } from '../';
+import { capitalize } from '../../screens';
 
 const Profile: React.FC = () => {
   const username = localStorage.getItem("Username") || ``;

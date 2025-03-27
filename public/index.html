@@ -5,69 +5,71 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="company" content="Mattix Team" />
-    <meta name="application-name" content="Mattix Web App" />
-    <meta name="version" content="1.0.0" />
+    <meta
+      name="company"
+      content="Mattix Team"
+    />
+    <meta
+      name="application-name"
+      content="Mattix Web App"
+    />
+    <meta
+      name="version"
+      content="1.0.0"
+    />
     <meta
       name="description"
       content="Mattix is brand of team's inventions has called Mattix Team. Our visions are distributing advanced IT projects, innovation, motivation either AI Technology and included particular expertise training of the employees's life path. Stay tune on us both connected and supporting us to bringing and achievement the visions together."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Mattix · Professionals | Expertises of Developments</title>
-    <script id="react-dotenv" src="./env.js"></script>
+    <title>Mattix &middot; Professionals | Expertises of Developments</title>
   </head>
   <body dir="ltr">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div
-      id="errors"
-      style="
-        background: #c00;
-        color: #fff;
-        display: none;
-        margin: -20px -20px 20px;
-        padding: 20px;
-        white-space: pre-wrap;
-      "
-    ></div>
-
+    <div id="errors" style="
+      background: #c00;
+      color: #fff;
+      display: none;
+      margin: -20px -20px 20px;
+      padding: 20px;
+      white-space: pre-wrap;
+    "></div>
+    
     <div id="root"></div>
 
     <script>
-      window.addEventListener("mousedown", function (e) {
-        document.body.classList.add("mouse-navigation");
-        document.body.classList.remove("kbd-navigation");
+      window.addEventListener('mousedown', function(e) {
+        document.body.classList.add('mouse-navigation');
+        document.body.classList.remove('kbd-navigation');
       });
-      window.addEventListener("keydown", function (e) {
+      window.addEventListener('keydown', function(e) {
         if (e.keyCode === 9) {
-          document.body.classList.add("kbd-navigation");
-          document.body.classList.remove("mouse-navigation");
+          document.body.classList.add('kbd-navigation');
+          document.body.classList.remove('mouse-navigation');
         }
       });
-      window.addEventListener("click", function (e) {
-        if (e.target.tagName === "A" && e.target.getAttribute("href") === "#") {
+      window.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A' && e.target.getAttribute('href') === '#') {
           e.preventDefault();
         }
       });
-      window.onerror = function (message, source, line, col, error) {
-        var text = error
-          ? error.stack || error
-          : message + " (at " + source + ":" + line + ":" + col + ")";
-        errors.textContent += text + "\n";
-        errors.style.display = "";
+      window.onerror = function(message, source, line, col, error) {
+        var text = error ? error.stack || error : message + ' (at ' + source + ':' + line + ':' + col + ')';
+        errors.textContent += text + '\n';
+        errors.style.display = '';
       };
-      console.error = (function (old) {
+      console.error = (function(old) {
         return function error() {
-          errors.textContent +=
-            Array.prototype.slice.call(arguments).join(" ") + "\n";
-          errors.style.display = "";
+          errors.textContent += Array.prototype.slice.call(arguments).join(' ') + '\n';
+          errors.style.display = '';
           old.apply(this, arguments);
-        };
+        }
       })(console.error);
-    </script>
-
-    <!-- SDK Log in -->
-    <!-- <script>
+      </script>
+      
+      <!-- SDK Log in -->
+<!-- <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '{your-app-id}',
@@ -88,5 +90,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script> -->
+
   </body>
 </html>

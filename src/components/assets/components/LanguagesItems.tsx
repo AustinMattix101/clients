@@ -52,7 +52,7 @@ const LanguagesItems: React.FC = () => {
   
   function renderItems(): JSX.Element[] {
     return Languages.map(({code, name, country_code}) => (
-      <li key={country_code} className="link mb-2">
+      <li key={country_code} className="link ml-6 mr-6 mb-2">
         <button 
         className="scale-up-center dropdown__item" 
         onClick={() => i18next.changeLanguage(code)} 
@@ -73,8 +73,8 @@ const LanguagesItems: React.FC = () => {
   return (
     <>
     <div className="mx-3 my-3">
-      {loading && <span className="scale-up-center">Loading...</span>}
-      {error && <span className="scale-up-center">Something went wrong...</span>}
+      {loading && <span>Loading...</span>}
+      {error && <span>Something went wrong...</span>}
     </div>
     {!error && renderItems()}
     </>

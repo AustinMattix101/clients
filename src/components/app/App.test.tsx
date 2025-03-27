@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
 import DarkMode from '../screens/darkmode/DarkMode';
 import { StrictMode, Suspense } from 'react';
-import Home from "../pages/home/Home";
-import About from "../pages/about/About";
+import Home from "../pages/Home/Home";
+import About from "../pages/About/About";
 
 test('renders App Go to previous version@1.0 link', () => {
   render(<App />);

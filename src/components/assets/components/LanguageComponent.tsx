@@ -18,18 +18,18 @@ const Languages: React.FC = () => {
         <div className="flex">
             <div className="flex flex-col items-center justify-between ml-2">
                 <div className="flex">
-                  <button className="m-4 mr-3 drop-shadow-md" type="button" onClick={localeToggleHandler}>
+                  <button className="m-4 mr-2" type="button" onClick={localeToggleHandler}>
                   <GlobeIcon />
                   </button>
                 </div>    
                 <div className="flex absolute mt-13 shadow-2xl rounded-2xl">
-                  <ul className={(show) ? ("scale-up-center items-center justify-start shadow-2xl rounded-2xl border mt-color-bg-gray") : ("")}>
+                  <ul className={(show) ? ("scale-up-center items-center justify-start shadow-2xl rounded-2xl border root__background-color") : ("")}>
                     {
                       show && 
-                      <div className="mr-8 my-3">
+                      <>
                       <span className="scale-up-center mx-10 font-bold">{t('language')}</span><hr className="scale-up-center mt-2 mx-15 root__background-color"/>
                       <LanguagesItems />
-                      </div>
+                      </>
                     }
                   </ul>
                 </div>

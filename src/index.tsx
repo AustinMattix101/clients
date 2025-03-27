@@ -5,7 +5,6 @@ import "./utils/i18next/i18next";
 import { getLoadingMarkup } from "./components/assets/components";
 
 import './index.css';
-
 const App = lazy(() => import('./components/app/App'));
 
 function GetApp(): void {

@@ -36,7 +36,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -62,7 +62,6 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .link {
-  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -73,6 +72,80 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   to {
     transform: rotate(360deg);
   }
+}
+
+/*  Mattix Background Color  */
+.mattix-bg-light {
+  background-color: colors.$light !important;
+}
+.mattix-bg-gray {
+  background-color: colors.$gray !important;
+}
+.mattix-bg-darkblue {
+  background-color: colors.$darkblue !important;
+}
+.mattix-bg-skyblue {
+  background-color: colors.$skyblue !important;
+}
+.mattix-bg-darkgreen {
+  background-color: colors.$darkgreen !important;
+}
+.mattix-bg-lightgreen {
+  background-color: colors.$lightgreen !important;
+}
+.mattix-bg-red {
+  background-color: colors.$red !important;
+}
+.mattix-bg-yellow {
+  background-color: colors.$yellow !important;
+}
+.mattix-bg-dark {
+  background-color: colors.$dark !important;
+}
+
+    /*  Mattix Color Apply */
+.mattix-light {
+  color: colors.$light !important;
+}
+.mattix-gray {
+  color: colors.$gray !important;
+}
+.mattix-darkblue {
+  color: colors.$darkblue !important;
+}
+.mattix-skyblue {
+  color: colors.$skyblue !important;
+}
+.mattix-darkgreen {
+  color: colors.$darkgreen !important;
+}
+.mattix-lightgreen {
+  color: colors.$lightgreen !important;
+}
+.mattix-red {
+  color: colors.$red !important;
+}
+.mattix-yellow {
+  color: colors.$yellow !important;
+}
+.mattix-dark {
+  color: colors.$dark !important;
+}
+
+.root__font-color {
+  color: var(--font-color) !important;
+}
+
+.root__background-color {
+  background-color: var(--background-color) !important;
+}
+
+.root__link-color {
+  color: var(--link-color) !important;
+}
+
+.root__font-family {
+  font-family: var(--font-family) !important;
 }
 
 .gradient__bg {
@@ -96,16 +169,6 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.gradient__bar {
-  background: var(--gradient-bar) !important;
-}
-
-.gradient__border {
-  border: 2px;
-  border-style: outset;
-  border-color: var(--gradient-bar) !important;
 }
 
 .section__padding {
@@ -163,110 +226,6 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   }  
 }
 
-  // Public Styles
-/*  Mattix Background Color  */
-.mt-bg-light {
-  background-color: colors.$light !important;
-}
-.mt-bg-gray {
-  background-color: colors.$gray !important;
-}
-.mt-bg-darkblue {
-  background-color: colors.$darkblue !important;
-}
-.mt-bg-skyblue {
-  background-color: colors.$skyblue !important;
-}
-.mt-bg-darkgreen {
-  background-color: colors.$darkgreen !important;
-}
-.mt-bg-lightgreen {
-  background-color: colors.$lightgreen !important;
-}
-.mt-bg-red {
-  background-color: colors.$red !important;
-}
-.mt-bg-yellow {
-  background-color: colors.$yellow !important;
-}
-.mt-bg-dark {
-  background-color: colors.$dark !important;
-}
-.mt-bg-black {
-  background-color: colors.$black !important;
-}
-
-    /*  Mattix Color Apply */
-.mt-light {
-  color: colors.$light !important;
-}
-.mt-gray {
-  color: colors.$gray !important;
-}
-.mt-darkblue {
-  color: colors.$darkblue !important;
-}
-.mt-skyblue {
-  color: colors.$skyblue !important;
-}
-.mt-darkgreen {
-  color: colors.$darkgreen !important;
-}
-.mt-lightgreen {
-  color: colors.$lightgreen !important;
-}
-.mt-red {
-  color: colors.$red !important;
-}
-.mt-yellow {
-  color: colors.$yellow !important;
-}
-.mt-dark {
-  color: colors.$dark !important;
-}
-
-  // Root Mattix Color
-.mt-color-bg {
-  background-color: var(--mt-color-bg) !important;
-}
-
-.mt-color-bg-gray {
-  background-color: var(--mt-color-bg-gray) !important;
-}
-
-.mt-color-text {
-  color: var(--mt-color-text) !important;
-}
-
-.mt-color-bg-blue {
-  background-color: var(--mt-color-blue) !important;
-}
-
-.mt-color-bg-green {
-  background-color: var(--mt-color-green) !important;
-}
-
-.mt-color-bg-yellow-red {
-  background-color: var(--mt-color-yellow-red) !important;
-}
-
-.root__font-color {
-  color: var(--font-color) !important;
-}
-
-.root__background-color {
-  background-color: var(--background-color) !important;
-}
-
-.root__link-color {
-  color: var(--link-color) !important;
-}
-
-.root__font-family {
-  font-family: var(--font-family) !important;
-}
-
-  // Build-in Style
 .list-style-none {
   list-style: none;
 }
@@ -293,19 +252,4 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 .mb-13 {
   margin-bottom: 13mm;
-}
-
-.bg-transparent {
-  background: transparent !important;
-}
-
-.transition-25 {
-  transition: all 0.25s;
-}
-
-.transition-50 {
-  transition: all 0.5s;
-}
-.user-select-none {
-  user-select: none;
 }

@@ -3,8 +3,7 @@ import { IHamburger as IProps } from "../navigation/NavBar";
 
 const Hamburger: React.FC<IProps> = ({hamburger, setHamburger}) => {
   
-  const HamburgerToggleHandler = (e:any): void => {
-    e.preventDefault();
+  const HamburgerToggleHandler = ():void => {
     setHamburger(!hamburger);
   }
   return (
