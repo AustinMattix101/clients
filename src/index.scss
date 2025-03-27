@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-color: #010203;
+    --background-color: #FFFFFF;
+    --link-color: cornflowerblue;
+    
+    --font-family: 'Manrope', sans-serif;
+
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    
+    --color-bg: #040C18;
+    --color-footer : #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+
+    --mt-color-bg: #f8f9fa;
+    --mt-color-bg-gray: #ccc;
+    --mt-color-text: #212529;
+    --mt-color-blue: #00aeef;
+    --mt-color-green: #8dc63f;
+    --mt-color-yellow-red: #fff200;
+}
+
+[data-theme="dark"] {
+    --font-color: #FFFFFF;
+    --background-color: #010203;
+    --link-color: lightblue;
+
+    --mt-color-bg: #212529;
+    --mt-color-bg-gray: #282828;
+    --mt-color-text: #f8f9fa;
+    --mt-color-blue: #2e3191;
+    --mt-color-green: #006838;
+    --mt-color-yellow-red: #ed1c24;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

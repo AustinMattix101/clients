@@ -1,0 +1,9 @@
+#gst {
+    background: url('../../assets/img/img101.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+}
+.get__started-bg {
+    width: 100%;
+}
